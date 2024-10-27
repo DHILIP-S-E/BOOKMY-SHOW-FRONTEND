@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for contrast */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar {
+    background-color: #ed3737; /* Updated Navbar color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+.navbar-brand {
+    color: white !important; /* White text for navbar brand */
+    font-weight: bold; /* Bold text for navbar brand */
+    margin-left: auto; /* Align title to the right */
+}
+
+.nav-link {
+    color: white !important; /* White text for navbar items */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #f0f0f0; /* Lighten on hover */
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; /* Increased bottom margin for spacing */
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border: none; /* No outline on card */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End state */
+    }
+}
+
+/* Unified hover effect for card and image */
+.movie-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.movie-card img {
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    width: 100%; /* Full width to fill the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the card area without distortion */
+    display: block; /* Removes any inline spacing issues */
+    border: none; /* No outline on image */
+    transition: transform 0.3s; /* Smooth image scaling */
+}
+
+.card-body {
+    padding: 10px; /* Increased padding for better spacing */
+    text-align: center;
+    color: #333; /* Dark text for readability */
+    background-color: white; /* Default background color */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.movie-card:hover .card-body {
+    background-color: rgba(255, 255, 255, 0.9); /* Change background for the card body on hover */
+}
+
+.card-title {
+    font-weight: bold; /* Bold movie title */
+    font-size: 1.2em; /* Adjust font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+.card-text {
+    font-size: 1em; /* Font size for genre */
+    color: #555; /* Slightly lighter color for genre text */
+}
+
+.btn-booking {
+    background-color: #e80909; /* Booking button color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Button font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-booking:hover {
+    background-color: #c10606; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+footer {
+    background-color: #ed3737; /* Footer color */
+    color: white; /* Footer text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding for the footer */
+    position: relative; /* Position relative for fixed footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow on top of footer */
+}
+
+footer p {
+    margin: 0; /* Remove margin for footer text */
+    font-size: 1em; /* Font size for footer */
+}
+
+/* Social links */
+footer .social-links a {
+    color: white; /* Social link color */
+    margin: 0 5px; /* Spacing between social links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+footer .social-links a:hover {
+    color: #f0f0f0; /* Lighten on hover */
+}
