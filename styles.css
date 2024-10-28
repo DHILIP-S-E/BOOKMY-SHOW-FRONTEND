@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #ed3737; /* Navbar color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important; /* Navbar text color */
+}
+
+#loadingMessage {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333; /* Darker color for better visibility */
+    margin-top: 20px;
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    max-width: 220px; /* Increased width for larger size */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth hover effect */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for cards */
+}
+
+/* Hover effect for movie cards */
+.movie-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    color: #444; /* Slightly darker text color for readability */
+    background-color: #f1f1f1; /* Light gray background for card body */
+}
+
+/* Booking button */
+.btn-booking {
+    background-color: #e80909; /* Red background for button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-booking:hover {
+    background-color: #c10606; /* Darker red on hover */
+}
+
+/* General footer styling */
+.main-footer {
+    background-color: #464545; /* Dark Gray */
+    color: white; /* Gold */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Times New Roman', serif;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+
+/* Portfolio footer styling */
+.portfolio-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333; /* Dark gray background for footer */
+    color: white; /* White text */
+    padding: 5px 0; /* Reduced padding for less vertical space */
+    z-index: 1000;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5em; /* Slightly smaller font size */
+    text-align: center; /* Centered text */
+    line-height: 0.3; /* Adjusted line height for a tighter look */
+    letter-spacing: 0.5px;
+}
+
+/* Name styling for emphasis */
+.portfolio-footer strong {
+    color: #ffffff; /* Gold color for emphasis */
+    font-weight: bold;
+    font-size: 1em; /* Slightly larger font for emphasis */
+}
